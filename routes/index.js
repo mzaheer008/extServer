@@ -315,11 +315,160 @@ router.post('/', function(req, res, next) {
     errorHideRemove : 'is-error',
     beforeSuucess : '.j_dialog_ok',
     successFieldSelector : '.book-promo_code_input .u-error-txt',
-    checkoutPage:'basket',
+    checkoutPage:'book',
     pageMethod:9
   };
 
+  const vaniday = {
+    couponInitializeBtn : "span:contains('Add a promo code/gift card')",
+    inputfield : '#voucher',
+    inputBtn : 'button',
+    successFieldSelector : '#voucher-code ~ label',
+    successHideBtn:'.vaniday-components-voucher__selector__option__remove-voucher',
+    failureHideBtn : '.close',
+    checkoutPage:'cart',
+    pageMethod:10
+  };
 
+  const klook = {
+    inputfield : '#promo_code',
+    inputBtn : '#redeem_btn',
+    beforeCouponStart:'.promo_drop_down',
+    beforeCouponApply:'.j_dialog_ok',
+    successFieldSelector : '.coupon_app .coupon .disc_code',
+    checkoutPage:'shoppingcart_id',
+    pageMethod:11
+  };
+
+  const expedia = {
+    inputfield : '#couponId',
+    inputBtn : '#apply_coupon_button',
+    couponInitializeBtn:'#coupon-code',
+    successFieldSelector : "span[data-price-update='total']",
+    failureHideBtn:'#remove-coupon-link',
+    checkoutPage:'Checkout',
+    pageMethod:12
+  };
+
+  const smartbuyglasses = {
+    inputfield : '#promo-code',
+    inputBtn : '.update-total',
+    couponInitializeBtn:'.radio-icon.left',
+    successFieldSelector : '#promo-code',
+    beforeProcessEnd:'.cart-error',
+    checkoutPage:'',
+    pageMethod:13
+  };
+
+  const abetterflorist = {
+    inputfield : '#coupon_code',
+    inputBtn : '#button_coupon_code',
+    beforeProcessEnd:'#sociallogin-close1',
+    couponInitializeBtn:'.rectangle-promo-code',
+    successFieldSelector : '#discount',
+    failureHideBtn:'.wrong-promo',
+    successHideBtn:'#remove-coupon',
+    checkoutPage:'checkout',
+    pageMethod:14
+  };
+
+  const adidas = {
+    inputfield : '#couponinput',
+    inputBtn : '#dwfrm_cart_addCoupon',
+    beforeProcessEnd:'.collapsed',
+    successFieldSelector : '#couponinput',
+    checkoutPage:'Cart-Show',
+    pageMethod:15
+  };
+  
+  const adidas = {
+    inputfield : '.FormText-input',
+    inputBtn : '.PromoCodeCardModal-actionBtn',
+    beforeProcessEnd:'.Modal-closeBtn',
+    couponInitializeBtn:'.Nav-cart',
+    beforeCouponEnter:'.CartSummary-promoBtnIconWrapper',
+    successFieldSelector : '#couponinput',
+    checkoutPage:'aesop',
+    pageMethod:16
+  };
+
+  const airasia = {
+    inputfield : '#side-voucher-number-heatmap',
+    inputBtn : '.waves-effect',
+    beforeProcessEnd:'#cancel-partial-payment-VO-heatmap',
+    couponInitializeBtn:'#apply-voucher-VO-heatmap',
+    successFieldSelector : '#side-voucher-number-heatmap',
+    checkoutPage:'payment',
+    pageMethod:17
+  };
+
+  const airasiago = {
+    inputfield : '#couponId',
+    inputBtn : '#apply_coupon_button',
+    couponInitializeBtn:'#coupon-code',
+    successFieldSelector : '.coupon-discount',
+    successHideBtn:'#remove-coupon-link',
+    checkoutPage:'HotelCheckout',
+    pageMethod:18
+  };
+
+  const allianztravel = {
+    inputfield : '#promotionCode',
+    inputBtn : '#promotionCode',
+    successFieldSelector : '#promotionCode',
+    checkoutPage:'get-a-quote',
+    pageMethod:19
+  };
+
+  const banggood = {
+    inputfield : '.code',
+    inputBtn : '.apply',
+    successFieldSelector : '.successbox b',
+    failureHideBtn:'.tips',
+    successHideBtn:'.cancelCoupon',
+    checkoutPage:'shopping_cart',
+    pageMethod:20
+  };
+
+  const chope = {
+    inputfield : '#promo_code',
+    inputBtn : '#applybutton',
+    couponStartBtn:'.ues_pro',
+    successFieldSelector : '#promo_code',
+    failureHideBtn:'#pro_message',
+    checkoutPage:'booking',
+    pageMethod:21
+  };
+
+  const cottonon = {
+    inputfield : '#promo-code',
+    inputBtn : '#add-coupon',
+    successFieldSelector : '.promo-code-item',
+    failureHideBtn:'.error-message',
+    successHideBtn:'.remove-promo-code',
+    checkoutPage:'bag',
+    pageMethod:22
+  };
+
+  const creative = {
+    inputfield : '.md-input',
+    inputBtn : '.md-button',
+    couponStartBtn:'.text-right a',
+    successFieldSelector : '.md-input',
+    checkoutPage:'shoppingcart',
+    pageMethod:23
+  };
+
+  const crocs = {
+    inputfield : '#couponFld',
+    inputBtn : '#addcoup',
+    couponStartBtn:'promo-accordion-link',
+    successFieldSelector : '#couponFld',
+    successHideBtn:'.removecoup',
+    failureHideBtn:'#couponErrorMsg',
+    checkoutPage:'on',
+    pageMethod:24
+  };
 
   if (ursl.indexOf(req.body.url) != -1){
     console.log("sending sephora url----------235-",)
