@@ -833,8 +833,295 @@ router.post('/', function(req, res, next) {
     couponClassRemover:'textbutton-disabled',
     successFieldSelector : '#promoCodeEntry',
     checkoutPage:'cart',
-    pageMethod:59
+    pageMethod:60
   };
+
+  const miniinthebox = {
+    inputfield : '#couponCode',
+    inputBtn : '#couponApply',
+    beforeProcessEnd:'.noCtrTrack',
+    couponStartBtn:'#to-use-coupon',
+    successFieldSelector : '.invalid',
+    successHideBtn:'.invalid',
+    checkoutPage:'checkout_payment_process',
+    pageMethod:61
+  };
+
+  const fwrd = {
+    inputfield : '#coupon_code',
+    inputBtn : '#coupon_code_button',
+    beforeProcessEnd:'.js-modal-close',
+    couponStartBtn:'#editPromoCode',
+    successFieldSelector : '#text_info',
+    successHideBtn:'#couponApply',
+    checkoutPage:'fw',
+    pageMethod:62
+  };
+
+  const designcrowd = {
+    inputfield : '.discount-box label input',
+    inputBtn : '.discount-box button',
+    beforeProcessEnd:'.form-error',
+    successFieldSelector : '.form-error',
+    successHideBtn:'#couponApply',
+    checkoutPage:'start',
+    pageMethod:63
+  };
+
+  const bubblepets = {
+    inputfield : '#discount-code',
+    inputBtn : '.action-apply',
+    beforeProcessEnd:'.message-error div',
+    couponStartBtn:'#block-discount-heading',
+    successFieldSelector : '.message-error div',
+    checkoutPage:'payment',
+    pageMethod:64
+  };
+  
+  const govoyagin = {
+    inputfield : '#payment ~ div input',
+    inputBtn : '#track-coupon-apply',
+    couponStartBtn:'#track-coupon-expand',
+    successFieldSelector : '.errorMessage',
+    checkoutPage:'checkout',
+    pageMethod:65
+  };
+
+  const theoutnet = {
+    inputfield : '#code',
+    inputBtn : '.PromotionForm4__submit',
+    couponStartBtn:'.ToggleSection5__button',
+    successFieldSelector : '.Notification9__message--field-error',
+    checkoutPage:'checkout',
+    pageMethod:66
+  };
+
+  const dreamcruiseline = {
+    inputfield : '#ModalContent_PromotionCode_txtPromoCode',
+    inputBtn : '#ModalContent_PromotionCode_lnkApplyPromotion',
+    beforeProcessEnd:'.giftmsg-error-basket',
+    couponStartBtn:'#btnPromotion',
+    successFieldSelector : '#ModalContent_PromotionCode_cvPromoCodeValidation',
+    checkoutPage:'Default',
+    pageMethod:67
+  };
+
+  const luxuryescapes = {
+    inputfield : '.sc-1ozyhae-3',
+    inputBtn : '.T-promo-button',
+    couponStartBtn:'.T-PromoCodeToggle',
+    successFieldSelector : '.wytc63-0',
+    checkoutPage:'payment',
+    pageMethod:68
+  };
+
+  const wish = {
+    inputfield : ".app input[type='text']",
+    inputBtn : '.WishButtons__WishButton-sc-13cvktr-0',
+    beforeProcessEnd:'.OrderSummary__ResponseMessage-dcq9z3-6',
+    couponStartBtn:'.kKMoSC',
+    successFieldSelector : '.OrderSummary__ResponseMessage-dcq9z3-6',
+    checkoutPage:'cart',
+    pageMethod:69
+  };
+
+  const castlery = {
+    inputfield : "input[name='coupon_code']",
+    inputBtn : "input[type='submit']",
+    couponStartBtn:'._1E7CbK',
+    successFieldSelector : '.is-shown .btn',
+    successHideBtn:'.is-shown .btn',
+    checkoutPage:'checkout',
+    pageMethod:70
+  };
+
+  const forever21 = {
+    inputfield : "#txt_promoCode",
+    inputBtn : "#btnPromoApply",
+    couponStartBtn:'#divPromoArea span',
+    successFieldSelector : '#err_promoCode',
+    checkoutPage:'checkout',
+    pageMethod:71
+  };
+
+  const fossil = {
+    inputfield : "#discount_code_applied",
+    inputBtn : "#applyDiscountCode",
+    processStart:'#applyDiscount button',
+    beforeProcessEnd:'#promoError',
+    successFieldSelector : '.btn-remove-promo',
+    successHideBtn:'.order-summary-item .btn-remove',
+    checkoutPage:'shopping-bag',
+    pageMethod:72
+  };
+
+  const farfetch = {
+    inputfield : "#PromoCode",
+    inputBtn : "#SummaryGoAddPromocode",
+    beforeProcessEnd:'.form-validator_error',
+    successFieldSelector : '.summary__added--promocode',
+    successFieldSelectorClass:'hide',
+    successHideBtn:'.summaryBox__promocode--buttonRemove',
+    checkoutPage:'ShippingAddress',
+    pageMethod:73
+  };
+
+  const whathewants = {
+    inputfield : "#coupon_code",
+    inputBtn : ".form-row-last .button",
+    beforeProcessEnd:'.woocommerce-error',
+    couponStartBtn:'.showcoupon',
+    successFieldSelector : '.woocommerce-error',
+    checkoutPage:'checkout',
+    pageMethod:74
+  };
+
+  const millenniumhotels = {
+    inputfield : ".discount-code-input input",
+    inputBtn : ".wgt-sqbutton-blue",
+    processStart:'.payment-information .nightly-breakdown span',
+    beforeProcessEnd1:'.code-block .error-message',
+    beforeProcessEnd2:'.payment-information .nightly-breakdown span',
+    successFieldSelector : '.code-block .error-message',
+    checkoutPage:'checkout',
+    pageMethod:75
+  };
+
+  const contactlens = {
+    inputfield : "#coupon_code",
+    inputBtn : ".coupon button",
+    beforeProcessEnd:'.woocommerce-notices-wrapper',
+    successFieldSelector : '.woocommerce-remove-coupon',
+    successHideBtn:'.woocommerce-remove-coupon',
+    checkoutPage:'cart',
+    pageMethod:76
+  };
+
+  const udemy = {
+    inputfield : "#coupon-input",
+    inputBtn : ".ud-component--clp--redeem-coupon button",
+    processStart:'.ud-component--clp--redeem-coupon button',
+    beforeProcessEnd1:'.ud-component--clp--redeem-coupon form div',
+    beforeProcessEnd1Class:'has-error',
+    beforeProcessEnd2:'.help-block',
+    successFieldSelector : '.ud-component--clp--redeem-coupon p',
+    successHideBtn:'.ud-component--clp--redeem-coupon form ~ div button',
+    checkoutPage:'course',
+    pageMethod:77
+  };
+
+  const shein = {
+    inputfield : "#coupon-input",
+    inputBtn : ".ud-component--clp--redeem-coupon button",
+    processStart:'.ud-component--clp--redeem-coupon button',
+    beforeProcessEnd1:'#coupon-input',
+    beforeProcessEnd1Class:'input-error-bg',
+    beforeProcessEnd2:'.error-tip',
+    successFieldSelector : '.apply-box span',
+    successHideBtn:'.apply-box span',
+    checkoutPage:'checkout',
+    pageMethod:78
+  };
+
+  const nomnomby = {
+    inputfield : ".discount-modal input",
+    inputBtn : ".discount-modal button",
+    beforeProcessEnd1:'.discount-modal__close',
+    beforeProcessEnd2:'.discount-modal__errors',
+    couponStartBtn:'.signup-plans-plan__discount',
+    successFieldSelector : '.signup-plans-plan__discount',
+    checkoutPage:'checkout',
+    pageMethod:79
+  };
+
+  const timberland = {
+    inputfield : "#id_couponcode",
+    inputBtn : "#onepagecheckout-coupon-add",
+    processStart:'.step-coupon',
+    beforeProcessEnd:'#coupon-notice',
+    successFieldSelector : '#onepagecheckout-coupon-remove',
+    successFieldSelectorCss:'display',
+    successHideBtn:'#onepagecheckout-coupon-remove',
+    checkoutPage:'checkout',
+    pageMethod:80
+  };
+
+  const godaddy = {
+    inputfield : "#enterPromoCode",
+    inputBtn : ".modal-body button",
+    couponStartBtn:'.promo-add-link button',
+    errorAttributeRemove:'disabled',
+    errorClassRemove:'btn--disabled',
+    successFieldSelector : '#Haveapromocode-modal-dialog',
+    failureHideBtn:'#Haveapromocode-modal-dialog .close',
+    successHideBtn:'.promo-code div',
+    checkoutPage:'checkout',
+    pageMethod:81
+  };
+
+  const zaful = {
+    inputfield : "#promotion_code",
+    inputBtn : "#applybtn",
+    beforeProcessEnd:'#apply_msg',
+    successFieldSelector : '#promotion_code',
+    successHideBtn:'#applybtn',
+    checkoutPage:'cart',
+    pageMethod:82
+  };
+
+  const samsonite = {
+    inputfield : "#couponCode",
+    inputBtn : ".promo-code-btn",
+    beforeProcessEnd:'.coupon-error-message',
+    successFieldSelector : '.coupon-error-message',
+    successHideBtn:'#applybtn',
+    checkoutPage:'cart',
+    pageMethod:83
+  };
+
+  const gnc = {
+    inputfield : "#couponCode",
+    inputBtn : ".promo-code-btn",
+    beforeProcessEnd:'.coupon-error-message',
+    successFieldSelector : '.coupon-error-message',
+    successHideBtn:'#applybtn',
+    checkoutPage:'cart',
+    pageMethod:84
+  };
+
+  const eamart = {
+    inputfield : ".promo-code-cont input",
+    inputBtn : ".input-group-btn button",
+    beforeProcessEnd:'.promo-error',
+    successFieldSelector : '.cart-promo-amount',
+    checkoutPage:'cart',
+    pageMethod:85
+  };
+
+  const qantas = {
+    inputfield : "#voucher-code",
+    inputBtn : "#apply-voucher",
+    processStart:'#toggle-voucher',
+    beforeProcessEnd:'.voucher-section',
+    beforeProcessEndAttribute:'has-error',
+    successFieldSelector : '.voucher-success',
+    successFieldSelectorCss:'display',
+    successFieldSelectorFilter:'none',
+    checkoutPage:'checkOut',
+    pageMethod:86
+  };
+
+  const fashionvalet = {
+    inputfield : 'input[name="fvcoupon"]',
+    inputBtn : ".btn-apply",
+    successFieldSelector : '.btn-remove',
+    successFieldSelectorCss:'display',
+    successFieldSelectorFilter:'none',
+    checkoutPage:'checkout',
+    pageMethod:87
+  };
+
+
 
   if (ursl.indexOf(req.body.url) != -1){
     console.log("sending sephora url----------235-",)
