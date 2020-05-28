@@ -1121,6 +1121,382 @@ router.post('/', function(req, res, next) {
     pageMethod:87
   };
 
+  const hm = {
+    inputfield : '#txt-discount-code',
+    inputBtn : "#btn-discount-code",
+    error : '#txt-discount-code-unknown-error-type-error',
+    discount:'#txt-discount-code-unknown-error-type-error',
+    condition:false,
+    removeErrorSelector:'#txt-discount-code',
+    removeErrorClass:'invalid',
+    checkoutPage:'cart',
+    pageMethod:88
+  };
+
+  const mango = {
+    inputfield : '#discount-voucher-code-data input',
+    inputBtn : "#discount-voucher-code-data button",
+    error : '.errorValidation',
+    discount:'.errorValidation',
+    condition:false,
+    removeErrorSelector:'#discount-voucher-code-data div',
+    removeErrorClass:'error',
+    checkoutPage:'checkout',
+    pageMethod:89
+  };
+
+  const lazada = {
+    inputfield : '#automation-voucher-input',
+    inputBtn : "#automation-voucher-input-button",
+    error : null,
+    discount:'#automation-voucher-input',
+    condition:false,
+    checkoutPage:'shipping',
+    pageMethod:90
+  };
+
+  const busonlineticket = {
+    inputfield : '#ContentPlaceHolder1_txtDiscountCode',
+    inputBtn : "#ContentPlaceHolder1_btnApply",
+    error : null,
+    discount:'#ContentPlaceHolder1_txtDiscountCode',
+    condition:false,
+    checkoutPage:'booking',
+    pageMethod:91
+  };
+
+  const moschino = {
+    processStart:'.discount h2',
+    inputfield : '#coupon_code',
+    inputBtn : ".buttons-set button",
+    error : null,
+    discount:'.discount h2',
+    condition:false,
+    checkoutPage:'checkout',
+    pageMethod:92
+  };
+
+  const circles = {
+    inputfield : '.st-content input',
+    inputBtn : ".ladda-button",
+    error : null,
+    discount:'.st-content input ~ div span',
+    condition:false,
+    checkoutPage:'pre_checkout',
+    pageMethod:93
+  };
+
+  const lovebonito = {
+    processStart:'#block-discount-heading',
+    inputfield : '#discount-code',
+    inputBtn : ".action-apply",
+    error : null,
+    discount:'#discount-code',
+    condition:false,
+    checkoutPage:'checkout',
+    pageMethod:94
+  };
+
+  const metro = {
+    inputfield : '#cphMain_txtPromoCode',
+    inputBtn : "#cphMain_btnApplyPromoCode",
+    error : null,
+    discount:'#cphMain_txtPromoCode',
+    condition:false,
+    checkoutPage:'cart',
+    pageMethod:95
+  };
+
+  const lelo = {
+    inputfield : '#dummy-input',
+    inputBtn : "#dummy-submit",
+    error : null,
+    discount:'#dummy-input',
+    condition:false,
+    checkoutPage:'checkout',
+    pageMethod:96
+  };
+
+  const rewardlaundry = {
+    inputfield : '#avada_coupon_code',
+    inputBtn : ".fusion-apply-coupon",
+    error : '.woocommerce-notices-wrapper',
+    discount:'#avada_coupon_code',
+    condition:false,
+    checkoutPage:'cart',
+    pageMethod:97
+  };
+
+  const chopeStatic = {
+    inputfield : '#discountCode',
+    inputBtn : "#applybtnId",
+    error : '#discountCodetips',
+    discount:'#discountCodetips',
+    condition:false,
+    checkoutPage:'payLah',
+    pageMethod:98
+  };
+
+  const opentrolley = {
+    inputfield : '.input-box input',
+    inputBtn : ".submit input",
+    error : '#ctl00_ContentPlaceHolder1_errormessage',
+    discount:'#ctl00_ContentPlaceHolder1_errormessage',
+    condition:false,
+    checkoutPage:'ShoppingCart',
+    pageMethod:99
+  };
+
+  const uniqlo = {
+    inputfield : '#id_couponcode',
+    inputBtn : "#onestepcheckout-coupon-add",
+    error : '#coupon-notice',
+    discount:'.error-msg',
+    condition:false,
+    checkoutPage:'onestepcheckout',
+    pageMethod:100
+  };
+
+  const furnituresg = {
+    inputfield : '#coupon',
+    inputBtn : "#confirm_coupon",
+    error : '.qc-checkout-product .error',
+    discount:'.qc-checkout-product .error',
+    condition:false,
+    checkoutPage:'checkout',
+    pageMethod:101
+  };
+
+  const strawberrynet = {
+    inputfield : '#discCode',
+    inputBtn : ".btnCouponApply",
+    error : '#coupontErrorsMsg',
+    discount:'#coupontErrorsMsg',
+    condition:false,
+    checkoutPage:'expresscheckout',
+    pageMethod:102
+  };
+
+  const hermo = {
+    inputfield : '.voucher-code-textfield input',
+    inputBtn : ".voucher-code-textfield ~ td a",
+    error : '.voucher-error-display-row',
+    discount:'.voucher-error-display-row',
+    condition:false,
+    checkoutPage:'cart',
+    pageMethod:103
+  };
+
+  const perfumestore = {
+    inputfield : '#coupon_code',
+    inputBtn : ".coupon .button",
+    error : '.woocommerce-error',
+    discount:'.woocommerce-error',
+    condition:false,
+    checkoutPage:'cart',
+    pageMethod:104
+  };
+
+  const kinokuniya = {
+    inputfield : '#order_coupon_id',
+    inputBtn : "#coupon_code_check_button",
+    error : '.coupon_note_area',
+    discount:'#coupon_note_rate',
+    condition:true,
+    checkoutPage:'cart',
+    pageMethod:105
+  };
+
+  const giant = {
+    inputfield : '#input-voucher-code',
+    inputBtn : "#btn-voucher-code",
+    error : '.form-coupon ~ .error',
+    discount:'.form-coupon ~ .error',
+    condition:false,
+    checkoutPage:'checkout',
+    pageMethod:106
+  };
+
+  const mobvoi = {
+    inputfield : '.order-discount .codeinput-without-login .input-wrapper input',
+    inputBtn : ".order-discount .codeinput-without-login .input-wrapper .discount-btn",
+    error : '.btn-coupon-code ~ .error',
+    discount:'._err-tips',
+    condition:false,
+    checkoutPage:'checkout',
+    pageMethod:107
+  };
+
+  const chichiclothing = {
+    inputfield : '#discount-code',
+    inputBtn : "#discount-form button",
+    error : '.message-error div',
+    discount:'.message-error div',
+    condition:false,
+    checkoutPage:'checkout',
+    pageMethod:108
+  };
+
+  const macys = {
+    inputfield : '#promo-apply-input',
+    inputBtn : ".promo-apply-button",
+    error : '.message-error div',
+    discount:'.notification-body',
+    condition:false,
+    checkoutPage:'my-bag',
+    pageMethod:109
+  };
+
+  const iherb = {
+    inputfield : '#coupon-input',
+    inputBtn : "#coupon-apply",
+    error : '#invalid-coupon-msg',
+    discount:'#coupon-apply',
+    condition:false,
+    checkoutPage:'cart',
+    pageMethod:110
+  };
+
+  const tumi = {
+    inputfield : '#VoucherCode',
+    inputBtn : "#ApplyVoucher",
+    error : '.smallmsg_info',
+    discount:'#ApplyVoucher',
+    condition:true,
+    checkoutPage:'singlepagecheckout',
+    pageMethod:111
+  };
+
+  const angelflorist = {
+    inputfield : '#promCode',
+    inputBtn : "#promCode ~ input",
+    error : '#promCodeErrMsg',
+    discount:'#promCodeErrMsg',
+    condition:false,
+    checkoutPage:'checkout_login',
+    pageMethod:112
+  };
+
+  const poplook = {
+    inputfield : '#voucher_code',
+    inputBtn : "#verifyvoucher",
+    error : '#voucher_code-error',
+    discount:'#verifyvoucher',
+    condition:false,
+    checkoutPage:'checkout',
+    pageMethod:113
+  };
+
+  const marksandspencer = {
+    inputfield : '.form__input--uppercase',
+    inputBtn : "#promocode",
+    error : '.promo-error',
+    discount:'.giftmsg-error-basket',
+    condition:false,
+    checkoutPage:'MSBasketView_ShoppingCartURL',
+    pageMethod:114
+  };
+
+  const romwe = {
+    inputfield : '.j-input-icon-coupon input',
+    inputBtn : ".j-apply-coupon-btn",
+    error : '.OrderSummary__ResponseMessage-dcq9z3-6',
+    discount:'.text-error-l',
+    condition:false,
+    checkoutPage:'checkout',
+    pageMethod:115
+  };
+
+  const boxgreen = {
+    inputfield : '#code',
+    inputBtn : ".continue",
+    error : '.OrderSummary__ResponseMessage-dcq9z3-6',
+    discount:'.error.message',
+    condition:false,
+    checkoutPage:'redeem',
+    pageMethod:116
+  };
+
+  const alcoholdelivery = {
+    inputfield : '.checkboxtotaldiv-top input',
+    inputBtn : ".checkboxtotaldiv-top div div span button",
+    error : '.checkboxtotaldiv-top .error',
+    discount:'.error.message',
+    condition:false,
+    checkoutPage:'cart',
+    pageMethod:117
+  };
+
+  const rwsentosa = {
+    inputfield : '.voucher-item__code input',
+    inputBtn : ".voucher-item__link a",
+    error : '.voucher-item__error',
+    discount:'.voucher-item__error',
+    condition:false,
+    checkoutPage:'cart',
+    pageMethod:118
+  };
+
+  const headout = {
+    processStart:'.promo-code-header span',
+    inputfield : '.promo-code-form-row input',
+    inputBtn : ".promo-code-submit-button span",
+    error : '.promo-code-fail-message',
+    discount:'.promo-code-success-message',
+    condition:true,
+    checkoutPage:'checkout',
+    pageMethod:119
+  };
+
+  const kiehls = {
+    inputfield : '#dwfrm_cart_couponCode',
+    inputBtn : "#add-coupon",
+    error : '.error_message',
+    discount:'#dwfrm_cart_couponCode',
+    condition:false,
+    checkoutPage:'cart',
+    pageMethod:120
+  };
+
+  const photojaanic = {
+    inputfield : '#edit-panes-uc-discounts-codes',
+    inputBtn : "#edit-panes-uc-discounts-button",
+    error : '#uc-discounts-messages-container',
+    discount:'#uc-discounts-messages-container .messages.status',
+    condition:true,
+    checkoutPage:'checkout',
+    pageMethod:121
+  };
+
+  const dell = {
+    inputfield : '#appendedInputButton',
+    inputBtn : "#applyCouponButton",
+    error : '.stp-apply-coupon-error-wrap',
+    discount:'#appendedInputButton',
+    condition:false,
+    checkoutPage:'cart',
+    pageMethod:122
+  };
+
+  const pandora = {
+    inputfield : '#dwfrm_mcouponcode_couponCode',
+    inputBtn : ".add-coupon-checkout",
+    error : '.error-coupon-checkout',
+    discount:'.error-coupon-checkout',
+    condition:false,
+    checkoutPage:'MCart',
+    pageMethod:123
+  };
+
+  const styletribute = {
+    inputfield : '#promocode',
+    inputBtn : ".right button",
+    error : '.right .field p',
+    discount:'#promocode',
+    condition:false,
+    checkoutPage:'checkout',
+    pageMethod:124
+  };
 
 
   if (ursl.indexOf(req.body.url) != -1){
