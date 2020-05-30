@@ -1498,6 +1498,398 @@ router.post('/', function(req, res, next) {
     pageMethod:124
   };
 
+  const underarmour = {
+    inputfield : '#dwfrm_cart_couponCode',
+    inputBtn : "#add-coupon",
+    processEnd : '.error',
+    discount:'.error',
+    checkoutPage:'checkout-cart',
+    pageMethod:125
+  };
+
+  const hp = {
+    inputfield : '#coupon_code',
+    inputBtn : ".apply",
+    processStart:"#block-discount-heading",
+    processEnd : '.message-error div',
+    discount:'.message-error div',
+    successHideBtn:'.primary .cancel',
+    checkoutPage:'checkout',
+    pageMethod:126
+  };
+
+  const katespade = {
+    inputfield : '#dwfrm_cart_couponCode',
+    inputBtn : "#add-coupon",
+    processStart:".cart-coupon-toggle",
+    processEnd : '.error',
+    discount:'.error',
+    successHideBtn:'#couponcode-submit',
+    checkoutPage:'shopping-bag',
+    pageMethod:127
+  };
+
+  const mgplabel = {
+    inputfield : '#discount_name',
+    inputBtn : ".discount_name_block input.btn",
+    processEnd : '#opc_cart_wrap',
+    discount:'.error li',
+    successHideBtn:'#couponcode-submit',
+    checkoutPage:'order',
+    pageMethod:128
+  };
+
+  const saturdayclub = {
+    inputfield : '#discount_name',
+    inputBtn : ".voucher_nav .button",
+    processEnd : '#opc_cart_wrap',
+    discount:'#opc_cart_wrap .error li',
+    checkoutPage:'quick-order',
+    pageMethod:129
+  };
+
+  const abebooks = {
+    inputfield : '#couponcode',
+    inputBtn : "#couponcode-submit",
+    errorClassRemove:'error',
+    discount:'#couponcode',
+    successHideBtn:'#couponcode-submit',
+    checkoutPage:'checkout',
+    pageMethod:130
+  };
+
+  const myprotein = {
+    inputfield : '#discountcode',
+    inputBtn : "#add-discount-code",
+    processEnd:'.athenaBasket_errorAlert',
+    discount:'#discountcode',
+    checkoutPage:'my.basket',
+    pageMethod:131
+  };
+
+  const forzieri = {
+    inputfield : '#BasketDiscountCode',
+    inputBtn : ".btn--submit",
+    processEnd:'.js-dismiss_itm',
+    errorClassRemove:'error',
+    discount:'#BasketDiscountCode',
+    successHideBtn:'.btn--submit',
+    checkoutPage:'usa',
+    pageMethod:132
+  };
+
+  const giftflowers = {
+    inputfield : '#coupon_code',
+    inputBtn : ".apply",
+    processEnd:'.message-error div',
+    discount:'#coupon_code',
+    beforeCouponEnter:'#block-discount-heading',
+    checkoutPage:'checkout',
+    pageMethod:133
+  };
+
+  const drgl = {
+    inputfield : '#coupon_code',
+    inputBtn : ".button-wrapper button",
+    processEnd:'.message-error div',
+    discount:'#coupon_code',
+    checkoutPage:'checkout',
+    pageMethod:134
+  };
+
+  const wihardja = {
+    inputfield : '#coupon_code',
+    inputBtn : ".coupon .is-form",
+    processEnd:'.message-container',
+    beforeCouponEnter:'.coupon .is-form',
+    discount:'#coupon_code',
+    checkoutPage:'cart',
+    pageMethod:135
+  };
+
+  const ebags = {
+    inputfield : '#enterMeCode',
+    inputBtn : "#Submit2",
+    processEnd:'.message-error div',
+    beforeCouponEnter:'#Submit2',
+    discount:'#enterMeCode',
+    checkoutPage:'cart',
+    pageMethod:136
+  };
+
+  const hqhair = {
+    inputfield : '#discountcode',
+    inputBtn : "#add-discount-code",
+    processEnd:'.responsiveBasket_errorAlert',
+    beforeCouponEnter:'#add-discount-code',
+    discount:'#discountcode',
+    checkoutPage:'my.basket',
+    pageMethod:137
+  };
+
+  const bossini = {
+    inputfield : '#dwfrm_cart_couponCode',
+    inputBtn : ".code_shopping",
+    processEnd:'.error-form',
+    discount:'#dwfrm_cart_couponCode',
+    checkoutPage:'en',
+    pageMethod:138
+  };
+
+  const mdreams = {
+    inputfield : '.promocodes',
+    inputBtn : ".oc-promocode",
+    processEnd:'.cart-list-summary .alert-danger',
+    discount:'.promocodes',
+    checkoutPage:'cart',
+    pageMethod:139
+  };
+
+  const senheng = {
+    inputfield : '#coupon_code',
+    inputBtn : ".primary .apply",
+    processEnd:'div [role=alert]',
+    discount:'div.message-error div',
+    checkoutPage:'checkout',
+    pageMethod:140
+  };
+
+  const hottopic = {
+    inputfield : '#dwfrm_cart_couponCode',
+    inputBtn : "#apply-coupon",
+    processEnd:'.coupon-form .error',
+    discount:'.coupon-error form .error',
+    checkoutPage:'cart',
+    pageMethod:141
+  };
+
+  const stylebop = {
+    inputfield : '#coupon_code',
+    inputBtn : ".button-wrapper button",
+    processEnd:'.error-msg',
+    discount:'#discount_name',
+    checkoutPage:'checkout',
+    pageMethod:142
+  };
+
+  const hbx = {
+    inputfield : '.content .input-group input',
+    inputBtn : ".content .input-group .input-group-btn button",
+    processEnd:'.message-error.error',
+    beforeCouponEnter:'#promo',
+    discount:'.list-unstyled',
+    failureHideBtn:'#error',
+    checkoutPage:'cart',
+    pageMethod:143
+  };
+
+  const jiji = {
+    inputfield : '#discount_name',
+    inputBtn : "#voucher button",
+    processEnd:'.alert.alert-danger',
+    discount:'#discount_name',
+    checkoutPage:'order',
+    pageMethod:144
+  };
+
+  const mothercare = {
+    inputfield : '#coupon_code',
+    inputBtn : "#discount-coupon-form button",
+    processEnd:'.messages',
+    discount:'#coupon_code',
+    checkoutPage:'checkout',
+    pageMethod:145
+  };
+
+  const beechenghiang = {
+    inputfield : '#coupon_code',
+    inputBtn : ".primary .apply",
+    processEnd:'.message-error.error',
+    beforeCouponEnter:'#block-discount-heading',
+    discount:'.message-error.error',
+    failureHideBtn:'#error',
+    checkoutPage:'cart',
+    pageMethod:146
+  };
+
+  const giftslessordinary = {
+    inputfield : '#coupon_code',
+    inputBtn : ".button2",
+    discount:'#coupon_code',
+    failureHideBtn:'#error',
+    checkoutPage:'cart',
+    pageMethod:147
+  };
+
+  const lookfantastic = {
+    inputfield : '#discountcode',
+    inputBtn : "#add-discount-code",
+    processEnd:'#coupon_code',
+    errorClassRemove:'error',
+    discount:'.responsiveBasket_removeItem-discount',
+    successHideBtn:'.responsiveBasket_removeItem-discount',
+    failureHideBtn:'#error',
+    checkoutPage:'basket',
+    pageMethod:148
+  };
+
+  const samplestore = {
+    inputfield : '#coupon_code',
+    inputBtn : "#discount-coupon-form button",
+    processEnd:'.messages',
+    discount:'.error_text',
+    checkoutPage:'checkout',
+    pageMethod:149
+  };
+
+  const guardian = {
+    inputfield : '#promo_inp',
+    inputBtn : "#applyButton",
+    processEnd:'#coupon_code',
+    errorClassRemove:'error',
+    beforeCouponEnter:'#promo_title',
+    discount:'#coupon_remove',
+    successHideBtn:'#coupon_remove',
+    failureHideBtn:'#error',
+    checkoutPage:'cart',
+    pageMethod:150
+  };
+
+  const charleskeith = {
+    inputfield : '#coupon_code',
+    inputBtn : ".discount-form button",
+    processEnd:'#coupon_code',
+    errorClassRemove:'error',
+    discount:'#coupon_code',
+    successHideBtn:'.discount-form button',
+    checkoutPage:'checkout',
+    pageMethod:151
+  };
+
+  const fayth = {
+    inputfield : '#discount_name',
+    inputBtn : "#voucher button",
+    processEnd:'#discount_name',
+    errorClassRemove:'error',
+    discount:'#discount_name',
+    failureHideBtn:'.alert-danger',
+    checkoutPage:'order',
+    pageMethod:152
+  };
+
+  const fareastflora = {
+    inputfield : '#coupon_code',
+    inputBtn : "#discount-coupon-form .button2",
+    processEnd:'.js-dismiss_itm',
+    errorClassRemove:'error',
+    discount:'#coupon_code',
+    failureHideBtn:'.error-msg',
+    successHideBtn:'#discount-coupon-form .button2',
+    checkoutPage:'checkout',
+    pageMethod:153
+  };
+
+  const mamahood = {
+    inputfield : '#discount_name',
+    inputBtn : ".button-small",
+    processEnd:'.js-dismiss_itm',
+    errorClassRemove:'error',
+    discount:'.cart__total__promotion-text',
+    successHideBtn:'.btn-input-group__btn a',
+    checkoutPage:'quick-order',
+    pageMethod:154
+  };
+
+  const looksi = {
+    inputfield : '#couponCode',
+    inputBtn : "#cart-coupon",
+    discount:'#couponCode"',
+    checkoutPage:'cart',
+    pageMethod:155
+  };
+
+  const foreo = {
+    inputfield : '#edit-coupon-redemption-code',
+    inputBtn : "form",
+    beforeCouponEnter:'.js-form-item-coupon-redemption-code .label',
+    discount:'.amount .rule-amount',
+    checkoutPage:'cart',
+    pageMethod:156
+  };
+
+  const zalora = {
+    inputfield : '#couponCode',
+    inputBtn : "#cart-coupon",
+    processEnd:'.js-dismiss_itm',
+    errorClassRemove:'error',
+    discount:'.cart__total__promotion-text',
+    successHideBtn:'.btn-input-group__btn a',
+    checkoutPage:'cart',
+    pageMethod:157
+  };
+
+  const coffeebean = {
+    inputfield : '#coupon_code',
+    inputBtn : ".discount-form button",
+    processEnd:'.error-msg',
+    discount:'.error-msg li',
+    checkoutPage:'checkout',
+    pageMethod:158
+  };
+
+  const ohvola = {
+    inputfield : '#coupon_code',
+    inputBtn : "#submitVoucher",
+    processEnd:'.alert.alert-danger',
+    discount:'.alert.alert-danger',
+    checkoutPage:'order',
+    pageMethod:159
+  };
+
+  const chanbrothersflexi = {
+    inputfield : '#promocode_code',
+    inputBtn : ".btn--promocode",
+    processEnd:'.redbox',
+    discount:'.redbox',
+    checkoutPage:'sessionkey',
+    pageMethod:160
+  };
+
+  const beautyexpert = {
+    inputfield : '#discountcode',
+    inputBtn : "#add-discount-code",
+    processEnd:'.responsiveBasket_errorAlert',
+    discount:'.responsiveBasket_errorAlert',
+    checkoutPage:'my.basket',
+    pageMethod:161
+  };
+
+  const tracyeinny = {
+    inputfield : '#coupon_code',
+    inputBtn : ".discount-form button",
+    processEnd:'.error-msg',
+    discount:'.error-msg li',
+    checkoutPage:'checkout',
+    pageMethod:162
+  };
+
+  const smilefloral = {
+    inputfield : '#coupon_code',
+    inputBtn : ".discount-form button",
+    processEnd:'.error-msg',
+    discount:'.error-msg li',
+    checkoutPage:'checkout',
+    pageMethod:163
+  };
+
+  const foodsterr = {
+    inputfield : '#coupon_code',
+    inputBtn : ".button2",
+    discount:'#coupon_code',
+    failureHideBtn:'#error',
+    checkoutPage:'cart',
+    pageMethod:164
+  };
 
   if (ursl.indexOf(req.body.url) != -1){
     console.log("sending sephora url----------235-",)
