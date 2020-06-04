@@ -218,7 +218,8 @@ router.post('/', function(req, res, next) {
 
   console.log("url=========",req.body.url);
   console.log("indexOf---------",ursl.indexOf(req.body.url));
-  const sf1 = {
+
+  const anticlockwise = {
     inputfield : '#edit-panes-uc-discounts-uc-discounts-codes',
     inputBtn : '#edit-panes-uc-discounts-uc-discounts-button',
     errorHideSelector : '.uc-discounts-messages',
@@ -226,7 +227,98 @@ router.post('/', function(req, res, next) {
     checkoutPage:'checkout',
     pageMethod:1
   };
-  const sf2 = {
+
+  const shopsassydream = {
+    inputfield : '#edit-panes-uc-discounts-uc-discounts-codes',
+    inputBtn : '#edit-panes-uc-discounts-uc-discounts-button',
+    errorHideSelector : '.uc-discounts-messages',
+    successFieldSelector : '.uc-discounts-messages',
+    checkoutPage:'checkout',
+    pageMethod:1
+  };
+
+  const pazzion = {
+    inputfield : '#edit-panes-uc-discounts-uc-discounts-codes',
+    inputBtn : '#edit-panes-uc-discounts-uc-discounts-button',
+    errorHideSelector : '.uc-discounts-messages',
+    successFieldSelector : '.uc-discounts-messages',
+    checkoutPage:'checkout',
+    pageMethod:1
+  };
+
+  const aforarcade = {
+    inputfield : '#edit-panes-uc-discounts-uc-discounts-codes',
+    inputBtn : '#edit-panes-uc-discounts-uc-discounts-button',
+    errorHideSelector : '.uc-discounts-messages',
+    successFieldSelector : '.uc-discounts-messages',
+    checkoutPage:'checkout',
+    pageMethod:1
+  };
+
+  const fairebelle = {
+    inputfield : '#edit-panes-uc-discounts-uc-discounts-codes',
+    inputBtn : '#edit-panes-uc-discounts-uc-discounts-button',
+    errorHideSelector : '.uc-discounts-messages',
+    successFieldSelector : '.uc-discounts-messages',
+    checkoutPage:'checkout',
+    pageMethod:1
+  };
+
+  const loveandbravery = {
+    inputfield : '#edit-panes-uc-discounts-uc-discounts-codes',
+    inputBtn : '#edit-panes-uc-discounts-uc-discounts-button',
+    errorHideSelector : '.uc-discounts-messages',
+    successFieldSelector : '.uc-discounts-messages',
+    checkoutPage:'checkout',
+    pageMethod:1
+  };
+
+  const theclosetlover = {
+    inputfield : '#edit-panes-uc-discounts-uc-discounts-codes',
+    inputBtn : '#edit-panes-uc-discounts-uc-discounts-button',
+    errorHideSelector : '.uc-discounts-messages',
+    successFieldSelector : '.uc-discounts-messages',
+    checkoutPage:'checkout',
+    pageMethod:1
+  };
+
+  const thetinselrack = {
+    inputfield : '#edit-panes-uc-discounts-uc-discounts-codes',
+    inputBtn : '#edit-panes-uc-discounts-uc-discounts-button',
+    errorHideSelector : '.uc-discounts-messages',
+    successFieldSelector : '.uc-discounts-messages',
+    checkoutPage:'checkout',
+    pageMethod:1
+  };
+
+  const shopfashmob = {
+    inputfield : '#edit-panes-uc-discounts-uc-discounts-codes',
+    inputBtn : '#edit-panes-uc-discounts-uc-discounts-button',
+    errorHideSelector : '.uc-discounts-messages',
+    successFieldSelector : '.uc-discounts-messages',
+    checkoutPage:'checkout',
+    pageMethod:1
+  };
+
+  const runwaybandits = {
+    inputfield : '#edit-panes-uc-discounts-uc-discounts-codes',
+    inputBtn : '#edit-panes-uc-discounts-uc-discounts-button',
+    errorHideSelector : '.uc-discounts-messages',
+    successFieldSelector : '.uc-discounts-messages',
+    checkoutPage:'checkout',
+    pageMethod:1
+  };
+
+  const thestagewalk = {
+    inputfield : '#edit-panes-uc-discounts-uc-discounts-codes',
+    inputBtn : '#edit-panes-uc-discounts-uc-discounts-button',
+    errorHideSelector : '.uc-discounts-messages',
+    successFieldSelector : '.uc-discounts-messages',
+    checkoutPage:'checkout',
+    pageMethod:1
+  };
+
+  const carrislabelle = {
     inputfield : '#checkout_reduction_code',
     inputBtn : '.field__input-btn-wrapper button',
     errorSelector : '.order-summary__sections .field',
@@ -239,7 +331,357 @@ router.post('/', function(req, res, next) {
     checkoutPage:'checkouts',
     pageMethod:2
   };
-  
+
+  const neonmello = {
+    inputfield : '#checkout_reduction_code',
+    inputBtn : '.field__input-btn-wrapper button',
+    errorSelector : '.order-summary__sections .field',
+    errorClass : 'field--error',
+    errorHideSelector : '#error-for-reduction_code',
+    inputFieldAttribute : '.field__input-btn',
+    inputFieldAttributeAction : 'disabled',
+    inputBtnClass : 'button.field__input-btn',
+    inputBtnClassActiion: 'btn--disabled',
+    checkoutPage:'checkouts',
+    pageMethod:2
+  };
+
+  const topazette = {
+    inputfield : '#checkout_reduction_code',
+    inputBtn : '.field__input-btn-wrapper button',
+    errorSelector : '.order-summary__sections .field',
+    errorClass : 'field--error',
+    errorHideSelector : '#error-for-reduction_code',
+    inputFieldAttribute : '.field__input-btn',
+    inputFieldAttributeAction : 'disabled',
+    inputBtnClass : 'button.field__input-btn',
+    inputBtnClassActiion: 'btn--disabled',
+    checkoutPage:'checkouts',
+    pageMethod:2
+  };
+
+  const thevelvetdolls = {
+    inputfield : '#checkout_reduction_code',
+    inputBtn : '.field__input-btn-wrapper button',
+    errorSelector : '.order-summary__sections .field',
+    errorClass : 'field--error',
+    errorHideSelector : '#error-for-reduction_code',
+    inputFieldAttribute : '.field__input-btn',
+    inputFieldAttributeAction : 'disabled',
+    inputBtnClass : 'button.field__input-btn',
+    inputBtnClassActiion: 'btn--disabled',
+    checkoutPage:'checkouts',
+    pageMethod:2
+  };
+
+  const althea = {
+    inputfield : '#checkout_reduction_code',
+    inputBtn : '.field__input-btn-wrapper button',
+    errorSelector : '.order-summary__sections .field',
+    errorClass : 'field--error',
+    errorHideSelector : '#error-for-reduction_code',
+    inputFieldAttribute : '.field__input-btn',
+    inputFieldAttributeAction : 'disabled',
+    inputBtnClass : 'button.field__input-btn',
+    inputBtnClassActiion: 'btn--disabled',
+    checkoutPage:'checkouts',
+    pageMethod:2
+  };
+
+  const ellanacosmetics = {
+    inputfield : '#checkout_reduction_code',
+    inputBtn : '.field__input-btn-wrapper button',
+    errorSelector : '.order-summary__sections .field',
+    errorClass : 'field--error',
+    errorHideSelector : '#error-for-reduction_code',
+    inputFieldAttribute : '.field__input-btn',
+    inputFieldAttributeAction : 'disabled',
+    inputBtnClass : 'button.field__input-btn',
+    inputBtnClassActiion: 'btn--disabled',
+    checkoutPage:'checkouts',
+    pageMethod:2
+  };
+
+  const flowerchimp = {
+    inputfield : '#checkout_reduction_code',
+    inputBtn : '.field__input-btn-wrapper button',
+    errorSelector : '.order-summary__sections .field',
+    errorClass : 'field--error',
+    errorHideSelector : '#error-for-reduction_code',
+    inputFieldAttribute : '.field__input-btn',
+    inputFieldAttributeAction : 'disabled',
+    inputBtnClass : 'button.field__input-btn',
+    inputBtnClassActiion: 'btn--disabled',
+    checkoutPage:'checkouts',
+    pageMethod:2
+  };
+
+  const kinohimitsu = {
+    inputfield : '#checkout_reduction_code',
+    inputBtn : '.field__input-btn-wrapper button',
+    errorSelector : '.order-summary__sections .field',
+    errorClass : 'field--error',
+    errorHideSelector : '#error-for-reduction_code',
+    inputFieldAttribute : '.field__input-btn',
+    inputFieldAttributeAction : 'disabled',
+    inputBtnClass : 'button.field__input-btn',
+    inputBtnClassActiion: 'btn--disabled',
+    checkoutPage:'checkouts',
+    pageMethod:2
+  };
+
+  const unit = {
+    inputfield : '#checkout_reduction_code',
+    inputBtn : '.field__input-btn-wrapper button',
+    errorSelector : '.order-summary__sections .field',
+    errorClass : 'field--error',
+    errorHideSelector : '#error-for-reduction_code',
+    inputFieldAttribute : '.field__input-btn',
+    inputFieldAttributeAction : 'disabled',
+    inputBtnClass : 'button.field__input-btn',
+    inputBtnClassActiion: 'btn--disabled',
+    checkoutPage:'checkouts',
+    pageMethod:2
+  };
+
+  const sleepsonno = {
+    inputfield : '#checkout_reduction_code',
+    inputBtn : '.field__input-btn-wrapper button',
+    errorSelector : '.order-summary__sections .field',
+    errorClass : 'field--error',
+    errorHideSelector : '#error-for-reduction_code',
+    inputFieldAttribute : '.field__input-btn',
+    inputFieldAttributeAction : 'disabled',
+    inputBtnClass : 'button.field__input-btn',
+    inputBtnClassActiion: 'btn--disabled',
+    checkoutPage:'checkouts',
+    pageMethod:2
+  };
+
+  const tomaz = {
+    inputfield : '#checkout_reduction_code',
+    inputBtn : '.field__input-btn-wrapper button',
+    errorSelector : '.order-summary__sections .field',
+    errorClass : 'field--error',
+    errorHideSelector : '#error-for-reduction_code',
+    inputFieldAttribute : '.field__input-btn',
+    inputFieldAttributeAction : 'disabled',
+    inputBtnClass : 'button.field__input-btn',
+    inputBtnClassActiion: 'btn--disabled',
+    checkoutPage:'checkouts',
+    pageMethod:2
+  };
+
+  const jeoel = {
+    inputfield : '#checkout_reduction_code',
+    inputBtn : '.field__input-btn-wrapper button',
+    errorSelector : '.order-summary__sections .field',
+    errorClass : 'field--error',
+    errorHideSelector : '#error-for-reduction_code',
+    inputFieldAttribute : '.field__input-btn',
+    inputFieldAttributeAction : 'disabled',
+    inputBtnClass : 'button.field__input-btn',
+    inputBtnClassActiion: 'btn--disabled',
+    checkoutPage:'checkouts',
+    pageMethod:2
+  };
+
+  const kohepets = {
+    inputfield : '#checkout_reduction_code',
+    inputBtn : '.field__input-btn-wrapper button',
+    errorSelector : '.order-summary__sections .field',
+    errorClass : 'field--error',
+    errorHideSelector : '#error-for-reduction_code',
+    inputFieldAttribute : '.field__input-btn',
+    inputFieldAttributeAction : 'disabled',
+    inputBtnClass : 'button.field__input-btn',
+    inputBtnClassActiion: 'btn--disabled',
+    checkoutPage:'checkouts',
+    pageMethod:2
+  };
+
+  const younghungryfree = {
+    inputfield : '#checkout_reduction_code',
+    inputBtn : '.field__input-btn-wrapper button',
+    errorSelector : '.order-summary__sections .field',
+    errorClass : 'field--error',
+    errorHideSelector : '#error-for-reduction_code',
+    inputFieldAttribute : '.field__input-btn',
+    inputFieldAttributeAction : 'disabled',
+    inputBtnClass : 'button.field__input-btn',
+    inputBtnClassActiion: 'btn--disabled',
+    checkoutPage:'checkouts',
+    pageMethod:2
+  };
+
+  const naiise = {
+    inputfield : '#checkout_reduction_code',
+    inputBtn : '.field__input-btn-wrapper button',
+    errorSelector : '.order-summary__sections .field',
+    errorClass : 'field--error',
+    errorHideSelector : '#error-for-reduction_code',
+    inputFieldAttribute : '.field__input-btn',
+    inputFieldAttributeAction : 'disabled',
+    inputBtnClass : 'button.field__input-btn',
+    inputBtnClassActiion: 'btn--disabled',
+    checkoutPage:'checkouts',
+    pageMethod:2
+  };
+
+  const axtrosports = {
+    inputfield : '#checkout_reduction_code',
+    inputBtn : '.field__input-btn-wrapper button',
+    errorSelector : '.order-summary__sections .field',
+    errorClass : 'field--error',
+    errorHideSelector : '#error-for-reduction_code',
+    inputFieldAttribute : '.field__input-btn',
+    inputFieldAttributeAction : 'disabled',
+    inputBtnClass : 'button.field__input-btn',
+    inputBtnClassActiion: 'btn--disabled',
+    checkoutPage:'checkouts',
+    pageMethod:2
+  };
+
+  const osmose = {
+    inputfield : '#checkout_reduction_code',
+    inputBtn : '.field__input-btn-wrapper button',
+    errorSelector : '.order-summary__sections .field',
+    errorClass : 'field--error',
+    errorHideSelector : '#error-for-reduction_code',
+    inputFieldAttribute : '.field__input-btn',
+    inputFieldAttributeAction : 'disabled',
+    inputBtnClass : 'button.field__input-btn',
+    inputBtnClassActiion: 'btn--disabled',
+    checkoutPage:'checkouts',
+    pageMethod:2
+  };
+
+  const paulaschoice = {
+    inputfield : '#checkout_reduction_code',
+    inputBtn : '.field__input-btn-wrapper button',
+    errorSelector : '.order-summary__sections .field',
+    errorClass : 'field--error',
+    errorHideSelector : '#error-for-reduction_code',
+    inputFieldAttribute : '.field__input-btn',
+    inputFieldAttributeAction : 'disabled',
+    inputBtnClass : 'button.field__input-btn',
+    inputBtnClassActiion: 'btn--disabled',
+    checkoutPage:'checkouts',
+    pageMethod:2
+  };
+
+  const slickcaseofficial = {
+    inputfield : '#checkout_reduction_code',
+    inputBtn : '.field__input-btn-wrapper button',
+    errorSelector : '.order-summary__sections .field',
+    errorClass : 'field--error',
+    errorHideSelector : '#error-for-reduction_code',
+    inputFieldAttribute : '.field__input-btn',
+    inputFieldAttributeAction : 'disabled',
+    inputBtnClass : 'button.field__input-btn',
+    inputBtnClassActiion: 'btn--disabled',
+    checkoutPage:'checkouts',
+    pageMethod:2
+  };
+
+  const misterzimi = {
+    inputfield : '#checkout_reduction_code',
+    inputBtn : '.field__input-btn-wrapper button',
+    errorSelector : '.order-summary__sections .field',
+    errorClass : 'field--error',
+    errorHideSelector : '#error-for-reduction_code',
+    inputFieldAttribute : '.field__input-btn',
+    inputFieldAttributeAction : 'disabled',
+    inputBtnClass : 'button.field__input-btn',
+    inputBtnClassActiion: 'btn--disabled',
+    checkoutPage:'checkouts',
+    pageMethod:2
+  };
+
+  const enfagrow = {
+    inputfield : '#checkout_reduction_code',
+    inputBtn : '.field__input-btn-wrapper button',
+    errorSelector : '.order-summary__sections .field',
+    errorClass : 'field--error',
+    errorHideSelector : '#error-for-reduction_code',
+    inputFieldAttribute : '.field__input-btn',
+    inputFieldAttributeAction : 'disabled',
+    inputBtnClass : 'button.field__input-btn',
+    inputBtnClassActiion: 'btn--disabled',
+    checkoutPage:'checkouts',
+    pageMethod:2
+  };
+
+  const aladdinstreet = {
+    inputfield : '#checkout_reduction_code',
+    inputBtn : '.field__input-btn-wrapper button',
+    errorSelector : '.order-summary__sections .field',
+    errorClass : 'field--error',
+    errorHideSelector : '#error-for-reduction_code',
+    inputFieldAttribute : '.field__input-btn',
+    inputFieldAttributeAction : 'disabled',
+    inputBtnClass : 'button.field__input-btn',
+    inputBtnClassActiion: 'btn--disabled',
+    checkoutPage:'checkouts',
+    pageMethod:2
+  };
+
+  const perkbykate = {
+    inputfield : '#checkout_reduction_code',
+    inputBtn : '.field__input-btn-wrapper button',
+    errorSelector : '.order-summary__sections .field',
+    errorClass : 'field--error',
+    errorHideSelector : '#error-for-reduction_code',
+    inputFieldAttribute : '.field__input-btn',
+    inputFieldAttributeAction : 'disabled',
+    inputBtnClass : 'button.field__input-btn',
+    inputBtnClassActiion: 'btn--disabled',
+    checkoutPage:'checkouts',
+    pageMethod:2
+  };
+
+  const robinsons = {
+    inputfield : '#checkout_reduction_code',
+    inputBtn : '.field__input-btn-wrapper button',
+    errorSelector : '.order-summary__sections .field',
+    errorClass : 'field--error',
+    errorHideSelector : '#error-for-reduction_code',
+    inputFieldAttribute : '.field__input-btn',
+    inputFieldAttributeAction : 'disabled',
+    inputBtnClass : 'button.field__input-btn',
+    inputBtnClassActiion: 'btn--disabled',
+    checkoutPage:'checkouts',
+    pageMethod:2
+  };
+
+  const rebeccaminkoff = {
+    inputfield : '#checkout_reduction_code',
+    inputBtn : '.field__input-btn-wrapper button',
+    errorSelector : '.order-summary__sections .field',
+    errorClass : 'field--error',
+    errorHideSelector : '#error-for-reduction_code',
+    inputFieldAttribute : '.field__input-btn',
+    inputFieldAttributeAction : 'disabled',
+    inputBtnClass : 'button.field__input-btn',
+    inputBtnClassActiion: 'btn--disabled',
+    checkoutPage:'checkouts',
+    pageMethod:2
+  };
+
+  const rosesonly = {
+    inputfield : '#checkout_reduction_code',
+    inputBtn : '.field__input-btn-wrapper button',
+    errorSelector : '.order-summary__sections .field',
+    errorClass : 'field--error',
+    errorHideSelector : '#error-for-reduction_code',
+    inputFieldAttribute : '.field__input-btn',
+    inputFieldAttributeAction : 'disabled',
+    inputBtnClass : 'button.field__input-btn',
+    inputBtnClassActiion: 'btn--disabled',
+    checkoutPage:'checkouts',
+    pageMethod:2
+  };
+
   const pegipegi = {
     inputfield : '#voucherCd',
     inputBtn : '.formDiskon button',
@@ -276,7 +718,7 @@ router.post('/', function(req, res, next) {
   };
 
   const myfave = {
-    couponInitializeBtn='#buy_now',
+    couponInitializeBtn : '#buy_now',
     inputfield : '.left .field input',
     inputBtn : '.checkout .right a',
     successFieldSelector : '.right strong.black',
@@ -381,7 +823,7 @@ router.post('/', function(req, res, next) {
     pageMethod:15
   };
   
-  const adidas = {
+  const aesop = {
     inputfield : '.FormText-input',
     inputBtn : '.PromoCodeCardModal-actionBtn',
     beforeProcessEnd:'.Modal-closeBtn',
@@ -792,7 +1234,7 @@ router.post('/', function(req, res, next) {
     pageMethod:56
   };
 
-  const fragrancehub = {
+  const veronikamaine = {
     inputfield : '#coupon-code-right',
     inputBtn : '.ec-cart-coupon__buttons div button',
     beforeProcessEnd:'.message-error div',
@@ -1892,8 +2334,8 @@ router.post('/', function(req, res, next) {
   };
 
   if (ursl.indexOf(req.body.url) != -1){
-    console.log("sending sephora url----------235-",)
-    res.send({'message':'Response from server ','storeData':storeData});
+    console.log("sending sephora url----------235-")
+    res.send({'message':'Response from server ','storeData':ellanacosmetics});
   } else {
     console.log("not sending sephora url-----------238")
   }
