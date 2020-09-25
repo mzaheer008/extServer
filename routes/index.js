@@ -2584,7 +2584,8 @@ router.post('/getStoreData', function(req, res, next) {
     console.log("'storeData':storesData[fName]------->----",fName,"--------->---",storesData[fName]);
     res.send({'message':'Response from server ','storeData':storesData[fName]});
   } else {
-    console.log("not sending sephora url-----------238")
+    console.log("not sending sephora url-----------238");
+    res.send({'message':'Response from server no Data Found '});
   }
   // res.render('index', { title: 'Express' });
 });
