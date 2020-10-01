@@ -210,29 +210,30 @@ const urls_1 =  [
 ];
 
 const urls = [
+"cottonon.com.sg",
+"zalora.sg/desigual/---pagerefresh",
+"sg.cosme-de.com",
+"crystaljade.com",
+"myfave.com/singapore/",
+"rwsentosa.com/en/attractions/universal-studios-singapore/explore", 
+"rwsentosa.com",
+"underarmour.com.sg/en-sg---pagerefresh",  
+"abetterflorist.com--",     
 "raukten.com.sg", 
-"cottonon.com.sg", 
 "agoda.com", 
 "vanitee.com", 
 "honestbee.sg", 
 "dressabelle.com.sg", 
 "sammydress.com", 
-"zalora.sg/desigual/", 
 "tigerair.com.au", 
 "comfortdelgro.com", 
-"sg.cosme-de.com", 
-"crystaljade.com", 
 "eastdane.com", 
-"myfave.com/singapore/", 
-"abetterflorist.com", 
-"rwsentosa.com/en/attractions/universal-studios-singapore/explore", 
 "zazzle.com", 
 "mcdelivery.com.sg", 
 "malaysiaairlines.com/sg/en.html", 
 "popeyes.com.sg", 
 "fwd.com.sg", 
-"melissa.com.sg", 
-"underarmour.com.sg/en-sg", 
+"melissa.com.sg-----nat have selector----------", 
 "danielwellington.com", 
 "chainreactioncycles.com", 
 "sg.godaddy.com", 
@@ -535,7 +536,6 @@ const urls = [
 "raynatours.com", 
 "redwhitemobile.com", 
 "refash.sg", 
-"rwsentosa.com", 
 "robinsons.com.sg", 
 "rosesonly.com.sg", 
 "royalselangor.com", 
@@ -1111,6 +1111,7 @@ router.post('/getStoreData', function(req, res, next) {
       successFieldSelector : '.right strong.black',
       successHideBtn : ".right .promo a",
       failureHideBtn : '.checkout .center a',
+      closingDiv : '#PaymentView img',
       checkoutPage:'',
       pageMethod:6
     },
@@ -1129,7 +1130,7 @@ router.post('/getStoreData', function(req, res, next) {
       inputBtn : 'button[data-at:"apply_btn"]',
       inputBtnExecution:`document.querySelector('#promoInput').dispatchEvent(new Event('input', { bubbles: true }));document.querySelector('#promoInput').dispatchEvent(new Event('blur'));document.querySelector('#promoInput').dispatchEvent(new Event('focus'));document.querySelector('[data-at="apply_btn"]').click()`,
       successFieldSelector : '[data-at="applied_promo"]',
-      successHideBtn : "button.css-1qlkeyl",
+      successHideBtn : '[data-at="applied_promo"]~button',
       checkoutPage:'basket',
       cartKey1:'localStorage',
       cartKey2:'basket',
@@ -1185,14 +1186,14 @@ router.post('/getStoreData', function(req, res, next) {
       pageMethod:13
     },
     abetterflorist : {
-      inputfield : '#coupon_code',
+      inputfield : 'coupon_code',
       inputBtn : '#button_coupon_code',
-      beforeProcessEnd:'#sociallogin-close1',
+      beforeProcessEnd:'.close_promo_code',
       couponInitializeBtn:'.rectangle-promo-code',
       successFieldSelector : '#discount',
       failureHideBtn:'.wrong-promo',
       successHideBtn:'#remove-coupon',
-      checkoutPage:'checkout',
+      checkoutPage:'payment',
       pageMethod:14
     },
     adidas : {
@@ -1290,7 +1291,7 @@ router.post('/getStoreData', function(req, res, next) {
       successFieldSelector : '.a-right',
       successHideBtn:'.js-checkout-coupon-cancel',
       failureHideBtn:'#coupon-validation-advice',
-      checkoutPage:'streamcheckout',
+      checkoutPage:'cart',
       pageMethod:25
     },
     euyansang : {
@@ -1493,12 +1494,13 @@ router.post('/getStoreData', function(req, res, next) {
       checkoutPage:'my-bag',
       pageMethod:47
     },
-    cosmede : {
+    'cosme-de' : {
       inputfield : '#coupon-code',
       inputBtn : '.input-group-btn button',
       successFieldSelector : '.btn-coupon',
       successHideBtn:'.btn-coupon',
       checkoutPage:'checkout',
+      failureHideBtn:'label[for="coupon-code"',
       pageMethod:48
     },
     mdscollections : {
@@ -2565,8 +2567,6 @@ router.post('/getStoreData', function(req, res, next) {
       pageMethod:164
     }
   }
-
-  if (urls.indexOf(req.body.url) != -1){
     console.log("sending sephora url----------235-");
     let fName = "";
     let hostName = req.body.url.split('.');
@@ -2582,11 +2582,7 @@ router.post('/getStoreData', function(req, res, next) {
       fName = hostName[1];
     }
     console.log("'storeData':storesData[fName]------->----",fName,"--------->---",storesData[fName]);
-    res.send({'message':'Response from server ','storeData':storesData[fName]});
-  } else {
-    console.log("not sending sephora url-----------238");
-    res.send({'message':'Response from server no Data Found '});
-  }
+    res.send({'message':'Response from server ','storeData':storesData[fName] || []});
   // res.render('index', { title: 'Express' });
 });
 
